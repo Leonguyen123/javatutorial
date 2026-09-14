@@ -57,6 +57,7 @@ public class TheadLifeCycleDemo {
                 }
             }
         }, "Staff import");
+
         // Nhân viên 3: Cần gấp (Bị blocked)
         Thread staffUrgent = new Thread(() -> {
             System.out.println("[Staff-Urgent] Đang đi đến cửa kho");
@@ -82,6 +83,7 @@ public class TheadLifeCycleDemo {
         System.out.println("[Staff-Urgent] Đứng chờ: " + staffCheck.getState()); // BLOCKED
 
 
+        // Dọn dẹp bộ nhớ.
         staffCheck.join();
         staffUrgent.join();
         staffImport.join();
