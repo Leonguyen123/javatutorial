@@ -5,8 +5,8 @@ public class Inheritance {
         System.out.println("test Inheritance");
 
         // Thay chỗ, Dog có thể đại diện cho Animal
-        Animal animal1 = new Animal();
-        animal1 = new Dog();
+        // Animal animal1 = new Animal();
+        // animal1 = new Dog();
 
         // Dymanic Binding.
         Animal animal = new Dog();
