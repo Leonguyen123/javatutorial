@@ -56,7 +56,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter(AccessLevel.PROTECTED)
-abstract class Payment {
+public abstract class Payment {
     // Tại sao phải là private
     private Long paymentId;
     private BigDecimal amount;
