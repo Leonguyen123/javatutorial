@@ -36,7 +36,6 @@ package com.example.javatutorial.javacore.inheritance;
 * không phụ thuộc đơn thuần vào loại phương thức thanh toán.
   */
 
-
 public class Inheritance {
     public static void main(String[] args){
         System.out.println("test Inheritance");
